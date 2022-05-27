@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/formcss.css">
+  
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+   <script defer src="../js/objectliteral.js">
+
+   </script>
+
+</head>
+
+<body>
+
+
+    <div class="mane">
+        <form  value="" id="myform"  action="#" >
+
+            <div class="customd">
+                <h1 style="margin: bottom 100px ;">Customer Details</h1>
+            </div>
+
+            <div id="name">
+                <h2 class="requiredf">Full Name</h2>
+                <b><span id="msg" style="color:red;"></span></b>
+                
+
+                <input type="text"  class="fname" id="t1" name="firstname">
+
+
+
+                <p class="firstp">First Name</p>
+
+               
+
+                <input type="text" class="lname" id="t2"   name="lastname">
+                <span id="msg1" style="color:red; position: absolute; top: 20px; left: 100px;"></span>
+                <p  class="secondp">Last Name</p>
+
+            </div>
+
+
+            <h2 style="position:absolute ; bottom: 340px; " class="adrs">Address</h2>
+            <b><span id="msg3" class="spanadrs"></span></b>
+            <br>
+
+
+            <input type="text"  class="street" id="t3" name="address">
+            <br>
+            <div class="p">
+                <p class="thirdp">Street Address</p>
+            </div>
+            <br>
+            <input type="text" id="" class="streetline">
+            <p class="fourthp">Street Address Line 2</p>
+            <br>
+            <br>
+            <b><span id="msg4" style="color:red"></span></b>
+            <br>
+            <input type="text" id="t4"  class="city" name="cityname">
+            <br>
+            <p class="fifthp">City</p>
+
+            <br>
+            <br>
+            <div class="p">
+                <b><span class="spanstate" id="msg5"></span></b>
+                <input type="text" id="t5"  class="state" name="statename">
+                <p class="sixthp">State / Province</p>
+            </div>
+            <b><span style="color:red ;" id="zipmsg"></span></b>
+            <input type="text" id="t6"  class="zip" name="codename">
+            <p class="sevenp">Postal / Zip Code</p>
+
+            <br>
+            <br>
+
+            <div class="phone">
+                <h2 class="requiredf">Phone Number</h2>
+                <b><span style="color:red ;" id="msg7"></span></b>
+                <br>
+                <input type="text"  id="t7"  class="no" maxlength="15" name="phoneno"
+                    placeholder="(000) 000-0000">
+            </div>
+            <br>
+            <br>
+            <div class="email">
+                <h2 class="requiredf">E-mail</h2>
+                <b><span style="color:red ;" id="msg6"></span></b>
+                <br>
+                <input type="text" id="t8" class="email1"  name="emailid"
+                    placeholder="ex:email@yahoo.com">
+                <br>
+                <br>
+                <p class="eightp">example@example.com</p>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <h2 class="requiredf">How did you hear about us?</h2>
+            <br>
+            <div class="drop">
+                <b><span id="dropmsg" style="color:red ;"></span></b>
+                <select name="dropdown"   class="drop" id="t9">
+                    <option value="">please select</option>
+                    <option value="Newspaper"> <b> Newspaper </b> </option>
+                    <option value="Internet">Internet</option>
+                    <option value="Magazine">Magazine</option>
+                    <option value="Others">Other(plese specify...)</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="feed">
+                <h2>Feedback about us:</h2>
+
+                <br>
+                <b><span id="feedbackmsg"  style="color:red ;"></span></b>
+                <textarea name="feedbackid" class="feedback" id="t10"  cols="93" rows="10"></textarea>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="suggestion">
+                <h2>suggestions if any for further improvement</h2>
+                <br>
+                <b><span id="smsg" style="color:red ;"></span></b>
+                <textarea name="suggestion" id="t11"  class="feedback" cols="93" rows="10"></textarea>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <div class="check">
+                <h2>Will you be willing to recommend us?</h2>
+
+                <input type="checkbox" id="check" name="check" class="checkbox"> 
+                <b><span id="check" style="color:red">
+                </span></b>
+
+
+                <br>
+                <br>
+                <p class="ninep">Gender</p>
+                <p><span id="radiomsg" style="color:red ;"></span></p>
+                <div class="radiop">
+                    <input type="radio" id="r1" value="male" name="r">&nbsp;Male
+                    <input type="radio" id="r2"  value="Female" name="r">&nbsp;Female
+                    <input type="radio"id="r3"  value="others" name="r">&nbsp;others
+                </div>
+            </div>
+
+            <div>
+                <br>
+                <br>
+
+
+                <h2>please give reference of any two people whom you feel:</h2>
+                <br>
+                <table cellpading="10px" border="3">
+                    <tr>
+                        <th style="border:hidden;"></th>
+                        <th class="color">First Name</th>
+                        <th class="color">Address</th>
+                        <th class="color">Contact Number</th>
+
+                    </tr>
+                    <tr>
+                        <td class="color">1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="color">2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+                
+                <br>
+                <br>
+                <div class="buttonborder">
+
+                    <button type="submit" id="btn">Submit</button>
+
+
+                </div>
+                <br>
+               
+
+            </div>
+
+
+
+        </form>
+
+        <table class="table2">
+            <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip/Postal Code</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>How Did you hear about us</th>
+                <th>feedback</th>
+                <th>Suggestion</th>
+                <th>Gender</th>
+            </tr>
+            </thead>
+            <tbody id="tb">
+            
+            </tbody>
+        </table>
+       
+    </div>
+
+</body>
+
+</html>
